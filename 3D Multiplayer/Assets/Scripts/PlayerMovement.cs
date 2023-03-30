@@ -48,13 +48,14 @@ public class PlayerMovement : NetworkBehaviour
             spawnedObjectTransform.GetComponent<NetworkObject>().Spawn(true);
             /*
             TestServerRpc("It does something with server");
+             */
             randomNumber.Value = new MyCustomData
             {
                 _int=10,
                 _bool=false,
                 message="All your data has been hacked",
             };
-            */
+           
         }
 
         if (Input.GetKeyDown(KeyCode.Y))
